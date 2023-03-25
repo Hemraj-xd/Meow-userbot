@@ -3,11 +3,10 @@
     "description": "Pyrogram userbot with music system.",
     "logo": "",
     "keywords": [
-        "Telegram",
-        "MusicPlayer",
-        "VideoPlayer"
+        "Telegram","MusicPlayer","VideoPlayer"
     ],
     "repository": "https://github.com/kaal0408/Meow",
+    "stack": "container",
     "env": {
         "SESSION": {
             "description": "Pyrogram String Session",
@@ -42,20 +41,6 @@
             "required": true
         }
     },
-    "addons": [],
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        },
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    
         }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    },
-    "stack": "container"
-}
+    
